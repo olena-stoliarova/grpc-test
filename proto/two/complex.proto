@@ -1,0 +1,9 @@
+syntax = "proto3";
+import "prototest/proto/one/structure.proto";
+
+message News {
+    string query = 1;
+    int32 page_number = 2;
+    int32 result_per_page = 3;
+    repeated SearchRequest requests =4;
+}
