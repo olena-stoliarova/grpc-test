@@ -1,5 +1,6 @@
 syntax = "proto3";
-import "prototest/proto/one/structure.proto";
+package prototest.proto.two;
+import "proto/one/structure.proto";
 
 message News {
     string query = 1;

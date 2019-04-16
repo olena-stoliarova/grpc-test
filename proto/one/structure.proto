@@ -1,4 +1,5 @@
 syntax = "proto3";
+package prototest.proto;
 
 message SearchRequest {
     string query = 1;
