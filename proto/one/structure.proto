@@ -1,5 +1,8 @@
 syntax = "proto3";
-package prototest.proto;
+
+package grpctest.proto.one;
+
+option go_package = "github.com/Olena23/grpc-test/proto/one";
 
 message SearchRequest {
     string query = 1;
