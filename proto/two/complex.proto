@@ -1,10 +1,14 @@
 syntax = "proto3";
-package prototest.proto.two;
+
+package grpctest.proto.two;
+
 import "proto/one/structure.proto";
+
+option go_package = "github.com/Olena23/grpc-test/proto/two";
 
 message News {
     string query = 1;
     int32 page_number = 2;
     int32 result_per_page = 3;
-    repeated SearchRequest requests =4;
+    repeated grpctest.proto.one.SearchRequest requests = 4;
 }
